@@ -1,0 +1,15 @@
+# Site settings
+title: PandaDojo
+email: pandawarrior91@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  This dojo is for me the share my knowledge and experience (technical or not) to my fellow pandas
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://pandawarrior91.github.io" # the base hostname & protocol for your site
+twitter_username: pandawarrior
+github_username:  pandawarrior91
+
+# Build settings
+markdown: kramdown
+kramdown:
+  input: GFM
+port: 8080
