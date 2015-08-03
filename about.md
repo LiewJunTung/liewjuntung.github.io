@@ -4,7 +4,7 @@ title: About me
 permalink: /about-me/
 ---
 
-![image][{{site.url}}/img/profile.jpg =100x]
+![image]({{site.url}}/img/profile.jpg =100x)
 
 My name is Liew Jun Tung, I am a Malaysian software developer and a member of GDG Kuala Lumpur. 
 
