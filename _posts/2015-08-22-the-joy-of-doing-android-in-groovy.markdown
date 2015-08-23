@@ -1,12 +1,12 @@
 ---
 layout: post
-title:  "The joy of Android programming with Groovy"
+title:  "The joy of Android development with Groovy"
 date:   2015-08-22
 categories: android groovy
 author: "Liew Jun Tung"
 ---
 ### tl;dr ###
-If you are having difficulties grasping Android programming because you are struggling with Java at the same time. Use `Groovy` programming language to learn the Android part first while you slowly understand how Java works in Android.
+If you are having difficulties grasping Android development because you are struggling with Java at the same time. Use `Groovy` programming language to learn the Android part first while you slowly understand how Java works in Android.
 
 -------------------------------
 
@@ -110,10 +110,10 @@ button.onClickListener = {
 }
 {% endhighlight %}
 
-### However, however fun it is. There are some stuffs to look out for when you programming Android using Groovy. ###
+### However, however fun it is. There are some stuffs to look out for when you are developing Android apps using Groovy. ###
 
 # 1. It's not the "official" way #
-Android programming still belongs to Java, while you can apply most of the solutions found in StackOverflow. You will most likely need to search harder if your problem is Groovy Android related. If you are slightly advance and you want to use the newest Dependency Injection library Dagger 2, You are out of luck. For now the `android-apt` is only for [Android in Java][bitbucket]{:target="_blank"}. Until Google say Groovy is THE REPLACEMENT for Java in programming Android, it will remain like this for some time to come. 
+Android programming still belongs to Java, while you can apply most of the solutions found in StackOverflow. You will most likely need to search harder if your problem is Groovy Android related. If you are slightly advance and you want to use the newest Dependency Injection library Dagger 2, You are out of luck. For now the `android-apt` is only for [Android in Java][bitbucket]{:target="_blank"}. Until Google say Groovy is THE REPLACEMENT for Java in developing Android apps, it will remain like this for some time to come. 
 
 # 2. Some very weird inconsistencies #
 Using some these Groovy syntax sugars are very cool and all, but there are some weird stuffs going on. For example,
@@ -145,7 +145,7 @@ View onCreateView(LayoutInflater inflater, ViewGroup viewgroup, Bundle savedInst
 
 # 3. Android Studio integration is not so good
 In Android Studio you can 'jump' directly to the layouts, string resources or styles directly from the with just a Ctrl key pressed down and a mouse click. As the time I ma writing now. You can't with Groovy. It'll boot you directly to the generated R.java file. Besides that, you can't create the ".groovy" file directly by right clicking on a folder. You should create a groovy template with "Edit File Template..." 
-![image]({{site.url}}/img/studio.jpg){:width="200"}
+![image]({{site.url}}/img/studio.png){:width="200"}
 
 # 4. Slow and cranky during compilation
 It has a weird bug when you do a `./gradlew build` after you did a `./gradlew clean`. Gradle will error out and the Groovy files will contains lots of red letters, which means the classes aren't prepared for you to use yet. You have to run `./gradlew build` again in order for it to be compiled successfully. And it takes quite some time to get it up and running. 
