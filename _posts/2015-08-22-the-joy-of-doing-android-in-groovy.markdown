@@ -145,7 +145,7 @@ View onCreateView(LayoutInflater inflater, ViewGroup viewgroup, Bundle savedInst
 
 # 3. Android Studio integration is not so good
 In Android Studio you can 'jump' directly to the layouts, string resources or styles directly from the with just a Ctrl key pressed down and a mouse click. As the time I ma writing now. You can't with Groovy. It'll boot you directly to the generated R.java file. Besides that, you can't create the ".groovy" file directly by right clicking on a folder. You should create a groovy template with "Edit File Template..." 
-![image]({{site.url}}/img/studio.png){:width="200"}
+![image]({{site.url}}/img/studio.png){:width="500"}
 
 # 4. Slow and cranky during compilation
 It has a weird bug when you do a `./gradlew build` after you did a `./gradlew clean`. Gradle will error out and the Groovy files will contains lots of red letters, which means the classes aren't prepared for you to use yet. You have to run `./gradlew build` again in order for it to be compiled successfully. And it takes quite some time to get it up and running. 
